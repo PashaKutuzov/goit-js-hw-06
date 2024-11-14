@@ -29,64 +29,11 @@ console.log(
 
  
 
-function calcAverageCalories(days){
-   if(days.length === 0){
-    return 0
-   }
-    
-   let totalCalories = 0
-    for (const calrs of days) {
-       totalCalories += calrs.calories 
-             
-       
-       
-     }   
-       
-    return totalCalories / days.length
-
-    }
-
-console.log(calcAverageCalories([
-      { day: "monday", calories: 3010 },
-      { day: "tuesday", calories: 3200 },
-      { day: "wednesday", calories: 3120 },
-      { day: "thursday", calories: 2900 },
-      { day: "friday", calories: 3450 },
-      { day: "saturday", calories: 3280 },
-      { day: "sunday", calories: 3300 }
-    ]) );
- 
-// 3180
-
-console.log(
-    calcAverageCalories([])
-  );
 
 
 
-const profile = {
-    username: "Jacob",
-  playTime: 300,
-  changeUsername(newName){
-this.username = newName
-  },
-  updatePlayTime(hours){
-this.playTime += hours
-  },
-  getInfo(){
-return `${this.username} has ${this.playTime} active hours!`
-  }
-};
 
 
-
-console.log(profile.getInfo()); // "Jacob has 300 active hours!"
-
-profile.changeUsername("Marco");
-console.log(profile.getInfo()); // "Marco has 300 active hours!"
-
-profile.updatePlayTime(20);
-console.log(profile.getInfo()); // "Marco has 320 active hours!"
 
 
 
